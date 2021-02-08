@@ -23,24 +23,24 @@
         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
         <header class="bg-white shadow">
           <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-            <div class="text-3xl font-bold leading-tight text-gray-900">
+            <div class="text-6xl font-bold leading-tight text-gray-900">
               Spezza soldi
             </div>
           </div>
         </header>
 
-        <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+        <div class="text-4xl max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
         
           <div class="px-4 py-6 sm:px-0">
             <div class="border-4 border-dashed border-gray-200 rounded-lg">
               <div class="px-4 py-6">
-                <div class="grid grid-flow-row gap-4 md:grid-flow-col">
+                <div class="grid grid-flow-row gap-4 lg:grid-flow-col">
                   <div>
                     <Dati @calcola="calcola"></Dati>
                   </div>
                   <div v-if="importo">
-                    <div class="py-2 text-xl font-bold text-center text-gray-800">
-                      Per ottenere <div class="text-4xl">
+                    <div class="py-2 font-bold text-center text-gray-800">
+                      Per ottenere <div class="text-8xl">
                         {{(importo/100).toFixed(2)}} €
                       </div>
                       hai bisogno di:
